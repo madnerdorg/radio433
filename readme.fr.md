@@ -18,7 +18,7 @@ Cette technologie n'est pas très fiable mais est utile si vous voulez éteindre
 # Instructions
 * Copier **radio433 / libraires** dans votre carnet de croquis arduino (Documents/Arduino)
 * Téléverser **radio433/radio433.ino**   
-* Aller sur [TODO]   
+* Aller sur http://madnerd.org/interface/homeautomation
   
 # Commandes disponibles
 * /info : Affiche nom:port (radio433:42002)  
