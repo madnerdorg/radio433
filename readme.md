@@ -18,7 +18,7 @@ This technology (433Mhz) isn't really reliable but this is pretty useful if you 
 # Instructions
 * Copy **radio433 / libraires** into arduino sketchbooks (Documents/Arduino)    
 * Upload **radio433/radio433.ino**   
-* Go to [TODO]   
+* Go to http://madnerd.org/interface/homeautomation 
   
 # Commands available
 * /info : Display name:port (radio433:42002)  
