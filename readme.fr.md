@@ -5,7 +5,7 @@
 
 # C'est quoi Radio433 ?
 ![radio2serial](doc/radio2serial.jpg)        
-Radio433 est un appareil qui permet de recevoir et envoyer permet de recevoir et envoyer plusieurs types de communications radio en 433Mhz (ou 315Mhz)         
+Radio433 est un appareil qui permet de recevoir et envoyer plusieurs types de communications radio en 433Mhz (ou 315Mhz)         
 Protocôles géré: RemoteTransmitter (old)/NewRemoteTransmitter (new)/RadioHead (text)      
 # Applications
 [![Video youtube radio433openlight](doc/video_radio433openlight.jpg)](https://www.youtube.com/watch?v=JnwSQTdr2jQ)
