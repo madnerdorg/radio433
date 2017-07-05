@@ -41,7 +41,7 @@ Cette technologie n'est pas très fiable mais est utile si vous voulez éteindre
 * Receiver : ASK Receiver Super-heterodyne  OOK RF - 4€
 * Transmitter : ASK transmitter - 2€
 * Arduino nano ch340g - 2€
-Coût total: 9€
+> Coût total: 9€
 
 ## Branchements
 ![Pinout](doc/schema_radio2serial.png)        
