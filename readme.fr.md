@@ -1,33 +1,63 @@
-[English version](https://github.com/madnerdorg/radio433/)
+[English](https://madnerdorg.github.io/radio433/)
 
-Radio433
-----
-![radio2serial](https://github.com/madnerdorg/radio433/blob/master/doc/radio2serial.jpg)        
-Cette arduino permet de recevoir et envoyer plusieurs types de communications radio en 433Mhz           
+[![Libre Connect](https://madnerdorg.github.io/libreconnect/doc/img/libreconnect_devices_banner.png)](https://madnerdorg.github.io/libreconnect/doc/fr/devices)   
+[Download Radio433](https://github.com/madnerdorg/radio433/archive/master.zip) /  [LibreConnect](https://madnerdorg.github.io/libreconnect/) /[Source](https://github.com/madnerdorg/radio433)
+
+# C'est quoi Radio433 ?
+![radio2serial](doc/radio2serial.jpg)        
+Radio433 est un appareil qui permet de recevoir et envoyer permet de recevoir et envoyer plusieurs types de communications radio en 433Mhz (ou 315Mhz)         
 Protocôles géré: RemoteTransmitter (old)/NewRemoteTransmitter (new)/RadioHead (text)      
+# Applications
+[![Video youtube radio433openlight](doc/video_radio433openlight.jpg)](https://www.youtube.com/watch?v=JnwSQTdr2jQ)
 
+## Domotique
+[Exemple Domotique](http://madnerd.org/interface/homeautomation)     
+![Home Automation Interface](doc/homeauto.jpg)
 * Contrôler des prises de courants à bas prix    
+* Contrôler des lampes
 * Envoyer du texte entre des arduino/raspberry pi   
 
-![new](https://github.com/madnerdorg/radio433/blob/master/doc/new.png)   
-![old](https://github.com/madnerdorg/radio433/blob/master/doc/old.png)   
-Pour plus d'informations sur les appareils compatibles: https://bitbucket.org/fuzzillogic/433mhzforarduino/    
+## Appareils compatibles
+Voici quelques indications des appareils compatibles
+![new code](doc/new.png)   
+![old code ](doc/old.png)   
+Pour plus d'informations sur les appareils compatibles: [https://bitbucket.org/fuzzillogic/433mhzforarduino/](https://bitbucket.org/fuzzillogic/433mhzforarduino/)
 
-Cette technologie n'est pas très fiable mais est utile si vous voulez éteindre/allumer des prises de courants à distance pour pas cher (utiliser des rfm69/95 si vous voulez une communication plus sécurisé/fiable)      
+Cette technologie n'est pas très fiable mais est utile si vous voulez éteindre/allumer des prises de courants à distance pour pas cher.
 
-# Instructions
+# Comment fabriquer radio433
+
+## Téléverser le code
 * Copier **radio433 / libraires** dans votre carnet de croquis arduino (Documents/Arduino)
 * Téléverser **radio433/radio433.ino**   
 * Aller sur http://madnerd.org/interface/homeautomation
-  
-# Commandes disponibles
+
+# Composants
+* Receiver : ASK Receiver Super-heterodyne  OOK RF - 4€
+* Transmitter : ASK transmitter - 2€
+* Arduino nano ch340g - 2€
+Coût total: 9€
+
+## Branchements
+![Pinout](doc/schema_radio2serial.png)        
+![radio2serial_internal](doc/radio2serial_internal.jpg)
+
+# Modèles 3D
+[Afficher les modèles](https://github.com/madnerdorg/radio433/tree/master/stl)
+
+# Commandes
 * /info : Affiche nom:port (radio433:42002)  
 * /status : Affiche l'état (en json)  
 ```
 {"file":"radio2serial.ino","url":"github.com/madnerdorg/radio433","ver":"1.2","pins":"tx:10;rx:2","state":"tx:1;rx:1"}
 ```
 ## Recevoir des codes radio
-Les données reçus sont en JSON (ex: "{"data" : "/radio/text/Hello World"}")
+La manière la plus simple d'obtenir les codes de vos prises de courant est d'utiliser la télécommande fourni avec.
+
+Les données reçus sont en JSON 
+```
+{"data" : "/radio/text/Hello World"}
+```
 
 ## Envoyer des codes radio
 Envoyer un messagee RadioHead (virtualwire)
@@ -50,19 +80,6 @@ Envoyer un code "old" "123456"
 ```
 /radio/old/123456
 ```
-
-# Composants
-* Receiver : ASK Receiver Super-heterodyne  OOK RF - 4€
-* Transmitter : ASK transmitter - 2€
-* Arduino nano ch340g - 3€
-Coût total: 10€
-
-# Branchements
-![Pinout](https://raw.githubusercontent.com/madnerdorg/radio433/master/doc/schema_radio2serial.png)
-![radio2serial_internal](https://github.com/madnerdorg/radio433/blob/master/doc/radio2serial_internal.jpg)
-
-# Modèles 3D
-[Afficher les modèles](https://github.com/madnerdorg/radio433/tree/master/3D)
 
 # Licenses
 
